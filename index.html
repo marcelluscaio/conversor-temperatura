@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Conversor temperatura</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+   <header>
+      <p>Caio Cabral</p>
+      <p>Front-End Developer</p>
+   </header>
+   <div class="wraper">
+      <div class="container">
+         <h1 class="page-title"><span class="page-frio">Frio</span> ou <span class="page-quente">quente</span>?</h1>
+         <p class="page-subtitle">Descubra se precisa de casaco ou de roupa de banho</p>  
+         <form class="formulario">
+            <p>A temperatura em
+               <select id="escalaUm">
+                  <option value="celsius">Celsius</option>
+                  <option value="fahrenheit">Fahrenheit</option>
+                  <option value="kelvin">Kelvin</option>
+               </select>
+               é
+               <input type="number" id="temperaturaInformada">
+               .
+            </p>
+            <p>Eu quero a temperatura em 
+               <select id="escalaDois">
+                  <option value="celsius">Celsius</option>
+                  <option value="fahrenheit">Fahrenheit</option>
+                  <option value="kelvin">Kelvin</option>
+               </select>
+               .
+            </p>
+            <button id="botaoConverte">Converte para mim?</button>
+         </form>
+         <p class="resposta"></p>
+
+      </div>
+   </div>
+   <footer>
+      <a href="https://www.linkedin.com/in/caio-marcellus-cabral/"><p>Linkedin</p></a>
+   </footer>
+
+   <script src="./js/script.js"></script>
+</body>
+</html>
